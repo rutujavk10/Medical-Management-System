@@ -1,0 +1,48 @@
+mysql> use batch28db;
+Database changed
+mysql> show tables;
++---------------------+
+| Tables_in_batch28db |
++---------------------+
+| emp                 |
+| employee            |
+| employee1           |
+| medicines           |
+| product             |
+| stu                 |
+| stud                |
+| student             |
+| students            |
++---------------------+
+9 rows in set (0.00 sec)
+
+mysql> desc medicines;
++----------+---------------+------+-----+---------+----------------+
+| Field    | Type          | Null | Key | Default | Extra          |
++----------+---------------+------+-----+---------+----------------+
+| id       | int           | NO   | PRI | NULL    | auto_increment |
+| name     | varchar(255)  | NO   |     | NULL    |                |
+| price    | decimal(10,2) | NO   |     | NULL    |                |
+| quantity | int           | NO   |     | NULL    |                |
++----------+---------------+------+-----+---------+----------------+
+4 rows in set (0.02 sec)
+
+mysql> select * from medicines;
++----+-----------------+--------+----------+
+| id | name            | price  | quantity |
++----+-----------------+--------+----------+
+|  3 | inhalers        | 120.00 |       43 |
+|  6 | Brilinta        | 340.00 |       10 |
+|  7 | Metformin       | 230.00 |       34 |
+|  8 | Nurtec          | 321.00 |       56 |
+|  9 | Otezla          | 340.00 |       38 |
+| 12 | kBC23           | 570.00 |       78 |
+| 13 | paracetamol     | 230.00 |       12 |
+| 15 | cholorozoxazone | 230.00 |       34 |
+| 16 | Thenac          | 340.00 |      450 |
+| 17 | Acetone         | 450.00 |       34 |
+| 18 | painkiller      | 212.00 |       45 |
++----+-----------------+--------+----------+
+11 rows in set (0.00 sec)
+
+mysql>
